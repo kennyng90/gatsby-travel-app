@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
+import { Button } from "./Button"
 
 const Header = () => {
   return (
@@ -16,6 +17,9 @@ const Header = () => {
           </NavLink>
         ))}
       </NavMenu>
+      <NavBtn>
+        <Button primary="true" round="true" to="/true">Book a Flight</Button>
+      </NavBtn>
     </Nav>
   )
 }
@@ -23,7 +27,7 @@ const Header = () => {
 export default Header
 
 const Nav = styled.nav`
-  background: red;
+  background: transparent;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -62,6 +66,16 @@ const NavMenu = styled.div`
   align-items: center;
 
   @media screen and (max-width: 768px) {
+    display: none;
+  }
+`
+
+const NavBtn = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+
+  @media screen and (max-width: 768px){
     display: none;
   }
 `
