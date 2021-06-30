@@ -16,7 +16,7 @@ const Trips = ({ heading }) => {
             name
             img {
               childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH, formats: WEBP)
+                gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH, formats: JPG)
               }
             }
           }
