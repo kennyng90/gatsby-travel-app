@@ -1,0 +1,26 @@
+[
+  {
+    "img": "../assets/images/travel-1.jpg",
+    "alt": "Wadi Musa",
+    "name": "Wadi Musa",
+    "button": "View Destination"
+  },
+  {
+    "img": "../assets/images/travel-2.jpg",
+    "alt": "Venezia River",
+    "name": "Venezia River",
+    "button": "View Destination"
+  },
+  {
+    "img": "../assets/images/travel-3.jpg",
+    "alt": "The Privat Beach",
+    "name": "The Privat Beach",
+    "button": "View Destination"
+  },
+  {
+    "img": "../assets/images/travel-4.jpg",
+    "alt": "Thien Mu Pagoda",
+    "name": "Thien Mu Pagodaa",
+    "button": "View Destination"
+  }
+]
