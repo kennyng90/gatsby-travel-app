@@ -16,13 +16,14 @@ const Trips = ({ heading }) => {
             name
             img {
               childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+                gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH, formats: WEBP)
               }
             }
           }
         }
       }
     }
+    
   `)
 
   function getTrips(data) {
