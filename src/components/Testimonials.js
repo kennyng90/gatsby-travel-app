@@ -17,12 +17,9 @@ const Testimonials = () => {
         edges {
           node {
             childImageSharp {
-              gatsbyImageData(
-                placeholder: BLURRED
-                layout: FULL_WIDTH
-                formats: JPG
-              )
+              gatsbyImageData(formats: JPG)
             }
+            name
           }
         }
       }
@@ -44,7 +41,12 @@ const Testimonials = () => {
               `}
             />
             <h3>Sean Michael</h3>
-            <p>"The holiday of a life time - Swimming in the most gorgeous coves, kayaking on crystal blue waters, hiking around ruins and into small remote villages and relaxing on the boat... it was the best trip ever."</p>
+            <p>
+              "The holiday of a life time - Swimming in the most gorgeous coves,
+              kayaking on crystal blue waters, hiking around ruins and into
+              small remote villages and relaxing on the boat... it was the best
+              trip ever."
+            </p>
           </Testimonial>
           <Testimonial>
             <FaRegLightbulb
@@ -68,7 +70,7 @@ const Testimonials = () => {
             <Images
               key={key}
               image={image.node.childImageSharp.gatsbyImageData}
-              alt={image.node.alt}
+              alt={image.node.name}
             />
           ))}
         </ColumnTwo>

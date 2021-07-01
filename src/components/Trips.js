@@ -46,8 +46,8 @@ const Trips = ({ heading }) => {
               </TextWrap>
               <Button
                 to="/trips"
-                primary={true}
-                round={true}
+                primary="true"
+                round="true"
                 css={`
                   position: absolute;
                   top: 420px;
