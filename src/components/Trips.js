@@ -16,54 +16,50 @@ const Trips = ({ heading }) => {
             name
             img {
               childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH, formats: JPG)
+                gatsbyImageData(
+                  placeholder: BLURRED
+                  layout: FULL_WIDTH
+                  formats: JPG
+                )
               }
             }
           }
         }
       }
     }
-    
   `)
-
-  function getTrips(data) {
-    const tripsArray = []
-    data.allTripsJson.edges.forEach((item, index) => {
-      tripsArray.push(
-        <ProductCard key={index}>
-          <ProductImg
-            image={item.node.img.childImageSharp.gatsbyImageData}
-            alt={item.node.alt}
-            src={item.node.img.childImageSharp.gatsbyImageData.src}
-          />
-          <ProductInfo>
-            <TextWrap>
-              <ImLocation />
-              <ProductTitle>{item.node.name}</ProductTitle>
-            </TextWrap>
-            <Button
-              to="/trips"
-              primary={true}
-              round={true}
-              css={`
-                position: absolute;
-                top: 420px;
-                font-size: 14px;
-              `}
-            >
-              {item.node.button}
-            </Button>
-          </ProductInfo>
-        </ProductCard>
-      )
-    })
-    return tripsArray
-  }
 
   return (
     <ProductsContainer>
       <ProductsHeading>{heading}</ProductsHeading>
-      <ProductWrapper>{getTrips(data)}</ProductWrapper>
+      <ProductWrapper>
+        {data.allTripsJson.edges.map((item, index) => (
+          <ProductCard key={index}>
+            <ProductImg
+              image={item.node.img.childImageSharp.gatsbyImageData}
+              alt={item.node.alt}
+            />
+            <ProductInfo>
+              <TextWrap>
+                <ImLocation />
+                <ProductTitle>{item.node.name}</ProductTitle>
+              </TextWrap>
+              <Button
+                to="/trips"
+                primary={true}
+                round={true}
+                css={`
+                  position: absolute;
+                  top: 420px;
+                  font-size: 14px;
+                `}
+              >
+                {item.node.button}
+              </Button>
+            </ProductInfo>
+          </ProductCard>
+        ))}
+      </ProductWrapper>
     </ProductsContainer>
   )
 }
