@@ -18,7 +18,9 @@ const Header = () => {
         ))}
       </NavMenu>
       <NavBtn>
-        <Button primary="true" round="true" to="/true">Book a Flight</Button>
+        <Button primary="true" round="true" to="/true">
+          Book a Flight
+        </Button>
       </NavBtn>
     </Nav>
   )
@@ -75,7 +77,7 @@ const NavBtn = styled.div`
   align-items: center;
   margin-right: 24px;
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     display: none;
   }
 `
