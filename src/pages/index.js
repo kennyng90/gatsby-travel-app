@@ -7,6 +7,8 @@ import Testimonials from "../components/Testimonials"
 import Trips from "../components/Trips"
 import Email from "../components/Email"
 
+import "./index.css";
+
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />

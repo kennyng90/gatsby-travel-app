@@ -5,6 +5,9 @@ import { Button } from "../components/Button"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+
+import "./index.css";
+
 const NotFoundPage = () => {
   return (
     <Layout>
