@@ -1,10 +1,12 @@
 import React from "react"
+import Fade from 'react-reveal/Fade'
 import styled from "styled-components"
 import { StatsData } from "../data/StatsData"
 
 const Stats = () => {
   return (
     <StatsContainer>
+            <Fade duration={1000} delay={500}>
       <Heading>Why Choose Us?</Heading>
       <Wrapper>
         {StatsData.map((item, index) => {
@@ -17,6 +19,7 @@ const Stats = () => {
           )
         })}
       </Wrapper>
+      </Fade>
     </StatsContainer>
   )
 }

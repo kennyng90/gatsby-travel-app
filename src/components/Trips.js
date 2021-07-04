@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Fade from "react-reveal/Fade"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { Button } from "./Button"
@@ -31,35 +32,37 @@ const Trips = ({ heading }) => {
 
   return (
     <ProductsContainer>
-      <ProductsHeading>{heading}</ProductsHeading>
-      <ProductWrapper>
-        {data.allTripsJson.edges.map((item, index) => (
-          <ProductCard key={index}>
-            <ProductImg
-              image={item.node.img.childImageSharp.gatsbyImageData}
-              alt={item.node.alt}
-            />
-            <ProductInfo>
-              <TextWrap>
-                <ImLocation />
-                <ProductTitle>{item.node.name}</ProductTitle>
-              </TextWrap>
-              <Button
-                to="/trips"
-                primary="true"
-                round="true"
-                css={`
-                  position: absolute;
-                  top: 420px;
-                  font-size: 14px;
-                `}
-              >
-                {item.node.button}
-              </Button>
-            </ProductInfo>
-          </ProductCard>
-        ))}
-      </ProductWrapper>
+      <Fade duration={1000} delay={500}>
+        <ProductsHeading>{heading}</ProductsHeading>
+        <ProductWrapper>
+          {data.allTripsJson.edges.map((item, index) => (
+            <ProductCard key={index}>
+              <ProductImg
+                image={item.node.img.childImageSharp.gatsbyImageData}
+                alt={item.node.alt}
+              />
+              <ProductInfo>
+                <TextWrap>
+                  <ImLocation />
+                  <ProductTitle>{item.node.name}</ProductTitle>
+                </TextWrap>
+                <Button
+                  to="/trips"
+                  primary="true"
+                  round="true"
+                  css={`
+                    position: absolute;
+                    top: 420px;
+                    font-size: 14px;
+                  `}
+                >
+                  {item.node.button}
+                </Button>
+              </ProductInfo>
+            </ProductCard>
+          ))}
+        </ProductWrapper>
+      </Fade>
     </ProductsContainer>
   )
 }

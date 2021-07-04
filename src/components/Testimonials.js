@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Fade from "react-reveal/Fade"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { IoMdCheckmarkCircleOutline } from "react-icons/io"
 import { FaRegLightbulb } from "react-icons/fa"
@@ -28,6 +29,7 @@ const Testimonials = () => {
 
   return (
     <TestimonialsContainer>
+            <Fade duration={1000} delay={500}>
       <TopLine>Testimonials</TopLine>
       <Description>What People are Saying</Description>
       <ContentWrapper>
@@ -75,6 +77,7 @@ const Testimonials = () => {
           ))}
         </ColumnTwo>
       </ContentWrapper>
+      </Fade>
     </TestimonialsContainer>
   )
 }

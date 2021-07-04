@@ -1,46 +1,49 @@
 import React from "react"
 import styled from "styled-components"
+import Fade from "react-reveal/Fade"
 import EmailBg from "../assets/images/email.jpg"
 import { Button } from "./Button"
 
 const Email = () => {
   return (
-    <EmailContainer>
-      <EmailContent>
-        <h1>Email</h1>
-        <p>
-          Sign up for your newsletter below to get $100 off your first trip!
-        </p>
-        <from action="#">
-          <FormWrap>
-            <label htmlFor="email">
-              <input type="email" placeholder="Enter your email" id="email" />
-            </label>
-            <Button
-              as="button"
-              type="submit"
-              primary="true"
-              round="true"
-              css={`
-                height: 48px;
-                
-                @media screen and (max-width: 768px) {
-                  width: 100%;
-                  min-width: 350px;
-                }
+    <Fade duration={1000} delay={500}>
+      <EmailContainer>
+        <EmailContent>
+          <h1>Email</h1>
+          <p>
+            Sign up for your newsletter below to get $100 off your first trip!
+          </p>
+          <from action="#">
+            <FormWrap>
+              <label htmlFor="email">
+                <input type="email" placeholder="Enter your email" id="email" />
+              </label>
+              <Button
+                as="button"
+                type="submit"
+                primary="true"
+                round="true"
+                css={`
+                  height: 48px;
 
-                @media screen and (max-width: 400px) {
-                  width: 100%;
-                  min-width: 250px;
-                }
-              `}
-            >
-              Sign Up
-            </Button>
-          </FormWrap>
-        </from>
-      </EmailContent>
-    </EmailContainer>
+                  @media screen and (max-width: 768px) {
+                    width: 100%;
+                    min-width: 350px;
+                  }
+
+                  @media screen and (max-width: 400px) {
+                    width: 100%;
+                    min-width: 250px;
+                  }
+                `}
+              >
+                Sign Up
+              </Button>
+            </FormWrap>
+          </from>
+        </EmailContent>
+      </EmailContainer>
+    </Fade>
   )
 }
 

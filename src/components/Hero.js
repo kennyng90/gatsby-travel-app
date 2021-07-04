@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import Fade from "react-reveal/Fade"
 import { Button } from "./Button"
 import HeroVideo from "../assets/videos/hero-beach-video.mp4"
 
@@ -18,11 +19,15 @@ const Hero = () => {
       </HeroBg>
       <HeroContent>
         <HeroItems>
-          <HeroH1>Unreal Destinations</HeroH1>
-          <HeroP>Out of this world</HeroP>
-          <Button primary="true" big="true" round="true" to="/true">
-            Travel Now
-          </Button>
+          <Fade duration={1000} delay={500}>
+            <HeroH1>Unreal Destinations</HeroH1>
+            <HeroP>Out of this world</HeroP>
+          </Fade>
+          <Fade duration={1000} delay={1000}>
+            <Button primary="true" big="true" round="true" to="/true">
+              Travel Now
+            </Button>
+          </Fade>
         </HeroItems>
       </HeroContent>
     </HeroContainer>
@@ -107,6 +112,6 @@ const HeroH1 = styled.h1`
 
 const HeroP = styled.p`
   font-size: clamp(1rem, 3vw, 3rem);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   font-weight: 400;
 `
