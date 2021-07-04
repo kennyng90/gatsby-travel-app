@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Fade from "react-reveal/Fade"
 import { Button } from "../components/Button"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -16,14 +15,10 @@ const NotFoundPage = () => {
         <NotFoundBg />
         <NotFoundContent>
           <NotFoundItems>
-            <Fade duration={1000} delay={500}>
               <NotFoundH1>404: Error Not Found</NotFoundH1>
-            </Fade>
-            <Fade duration={1000} delay={1000}>
               <Button primary="true" big="true" round="true" to="/">
                 Go Back
               </Button>
-            </Fade>
           </NotFoundItems>
         </NotFoundContent>
       </NotFoundContainer>

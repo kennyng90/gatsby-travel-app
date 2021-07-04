@@ -1,13 +1,18 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import { animateScroll as scroll } from "react-scroll";
 
 const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <FooterContainer>
       <FooterLinksWrapper>
         <FooterDesc>
-          <h1>TRAVELIX</h1>
+          <Logo to="/" onClick={toggleHome}>TRAVELIX</Logo>
           <p>We strive to creat the best experiences for our customers</p>
         </FooterDesc>
         <FooterLinkItems>
@@ -52,14 +57,16 @@ export const FooterContainer = styled.div`
 export const FooterDesc = styled.div`
   padding: 0 2rem;
 
-  h1 {
-    margin-bottom: 3rem;
-    color: #f26a2e;
-  }
-
   @media screen and (max-width: 400px) {
     padding: 1rem;
   }
+`
+
+export const Logo = styled.h1`
+    margin-bottom: 3rem;
+    color: #f26a2e;
+    font-weight: bold;
+  cursor: pointer;
 `
 
 export const FooterLinksWrapper = styled.div`
