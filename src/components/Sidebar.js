@@ -80,7 +80,7 @@ export const SidebarContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  transition: 0.5s ease-in;
+  transition: 0.5s ease-in-out;
   left: ${({ isOpen }) => (isOpen ? "0" : "100%")};
 `
 
@@ -112,7 +112,7 @@ export const SidebarLinks = styled(Link)`
   text-decoration: none;
 
   &:hover {
-    color: #dcdcdc;
+    color: ${({ scrollNav }) => (scrollNav ? "#f26a2e" : "dcdcdc")};
     transition: 0.3s ease-out;
   }
 `

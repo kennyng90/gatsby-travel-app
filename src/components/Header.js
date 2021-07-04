@@ -70,6 +70,7 @@ const Nav = styled.nav`
   padding: 0.5rem calc((100vw - 1300px) / 2);
   z-index: 999;
   position: sticky;
+  transition: 0.5s ease-in-out;
   top: 0;
 `
 
@@ -95,7 +96,7 @@ const NavLink = styled(Link)`
   cursor: pointer;
 
   &:hover {
-    color: #dcdcdc;
+    color:  ${({ scrollNav }) => (scrollNav ? "#f26a2e" : "dcdcdc")};
     transition: 0.3s ease-out;
   }
 `
