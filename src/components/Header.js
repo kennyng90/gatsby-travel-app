@@ -8,7 +8,7 @@ import { Button } from "./Button"
 const Header = () => {
   return (
     <Nav>
-      <NavLink to="/">EXPLORIX</NavLink>
+      <NavLogo to="/">TRAVELIX</NavLogo>
       <Bars />
       <NavMenu>
         {menuData.map((item, index) => (
@@ -35,8 +35,22 @@ const Nav = styled.nav`
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   z-index: 100;
-  position: relative;
+  position: sticky;
 `
+
+const NavLogo = styled(Link)`
+  color: #fff;
+  display: flex;
+  font-weight: bold;
+  font-size: 1.5rem;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 2rem;
+  height: 100%;
+  cursor: pointer;
+  z-index: 999;
+`
+
 
 const NavLink = styled(Link)`
   color: #fff;
@@ -76,6 +90,7 @@ const NavBtn = styled.div`
   display: flex;
   align-items: center;
   margin-right: 24px;
+  padding: 0 2rem;
 
   @media screen and (max-width: 768px) {
     display: none;

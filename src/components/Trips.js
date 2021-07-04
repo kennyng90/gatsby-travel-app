@@ -70,7 +70,8 @@ const Trips = ({ heading }) => {
 export default Trips
 
 const ProductsContainer = styled.div`
-  min-height: 100vh;
+  min-height: 100%;
+  margin-bottom: 139px;
   padding: 5rem calc((100vw - 1300px) / 2);
   background: transparent;
   color: #fff;

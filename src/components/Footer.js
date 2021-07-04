@@ -7,8 +7,8 @@ const Footer = () => {
     <FooterContainer>
       <FooterLinksWrapper>
         <FooterDesc>
-          <h1>Travelix</h1>
-          <p>We strive to creat the best experinces for our customers</p>
+          <h1>TRAVELIX</h1>
+          <p>We strive to creat the best experiences for our customers</p>
         </FooterDesc>
         <FooterLinkItems>
           <FooterLinkTitle>Contact Us</FooterLinkTitle>
