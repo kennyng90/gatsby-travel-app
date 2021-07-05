@@ -35,7 +35,7 @@ const Header = ({ toggle }) => {
   return (
     <Nav scrollNav={scrollNav}>
       <NavLogo to="/" scrollNav={scrollNav} onClick={toggleHome}>
-        TRAVELIX
+      TRAVELY
       </NavLogo>
       <BurgerIcon onClick={handleClick} scrollNav={scrollNav}>
         {click ? (
@@ -96,7 +96,7 @@ const NavLink = styled(Link)`
   cursor: pointer;
 
   &:hover {
-    color:  ${({ scrollNav }) => (scrollNav ? "#f26a2e" : "dcdcdc")};
+    color:  ${({ scrollNav }) => (scrollNav ? "#f26a2e" : "#dcdcdc")};
     transition: 0.3s ease-out;
   }
 `

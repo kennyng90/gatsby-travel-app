@@ -13,7 +13,7 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <Hero />
-    <Trips heading="Our Favourite Destinations" />
+    <Trips heading="Our Selected Trips" />
     <Testimonials />
     <Stats />
     <Email />

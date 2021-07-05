@@ -31,18 +31,18 @@ const Testimonials = () => {
     <TestimonialsContainer>
             <Fade duration={1000} delay={500}>
       <TopLine>Testimonials</TopLine>
-      <Description>What People are Saying</Description>
+      <Description>What the travelers are saying</Description>
       <ContentWrapper>
         <ColumnOne>
           <Testimonial>
             <IoMdCheckmarkCircleOutline
               css={`
-                color: #3fffa8;
+                color: #F26A2E;
                 font-size: 2rem;
                 margin-bottom: 1rem;
               `}
             />
-            <h3>Sean Michael</h3>
+            <h3>Richard Anderson</h3>
             <p>
               "The holiday of a life time - Swimming in the most gorgeous coves,
               kayaking on crystal blue waters, hiking around ruins and into
@@ -53,17 +53,17 @@ const Testimonials = () => {
           <Testimonial>
             <FaRegLightbulb
               css={`
-                color: #f9b19b;
+                color: #F26A2E;
                 font-size: 2rem;
                 margin-bottom: 1rem;
               `}
             />
-            <h3>Sara Kim</h3>
+            <h3>Christina Lopez</h3>
             <p>
               "The combination of cruising, walking through fascinating
               archaeological sites, meeting friendly Turkish villagers, swimming
               in warm clear waters and being fed delicious healthy Turkish food
-              in good company - is just a winne"
+              in good company - is just a winner"
             </p>
           </Testimonial>
         </ColumnOne>

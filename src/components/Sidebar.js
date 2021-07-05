@@ -112,7 +112,7 @@ export const SidebarLinks = styled(Link)`
   text-decoration: none;
 
   &:hover {
-    color: ${({ scrollNav }) => (scrollNav ? "#f26a2e" : "dcdcdc")};
+    color: ${({ scrollNav }) => (scrollNav ? "#f26a2e" : "#dcdcdc")};
     transition: 0.3s ease-out;
   }
 `

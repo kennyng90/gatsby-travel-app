@@ -7,14 +7,14 @@
   },
   {
     "img": "../assets/images/travel-2.jpg",
-    "alt": "Venezia River",
-    "name": "Venezia River",
+    "alt": "Maldives",
+    "name": "Maldives",
     "button": "View Destination"
   },
   {
     "img": "../assets/images/travel-3.jpg",
-    "alt": "The Privat Beach",
-    "name": "The Privat Beach",
+    "alt": "Aguas Calientes",
+    "name": "Aguas Calientes",
     "button": "View Destination"
   },
   {

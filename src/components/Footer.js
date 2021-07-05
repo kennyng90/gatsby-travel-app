@@ -12,7 +12,7 @@ const Footer = () => {
     <FooterContainer>
       <FooterLinksWrapper>
         <FooterDesc>
-          <Logo to="/" onClick={toggleHome}>TRAVELIX</Logo>
+          <Logo to="/" onClick={toggleHome}>TRAVELY</Logo>
           <p>We strive to creat the best experiences for our customers</p>
         </FooterDesc>
         <FooterLinkItems>

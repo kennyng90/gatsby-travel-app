@@ -20,8 +20,8 @@ const Hero = () => {
       <HeroContent>
         <HeroItems>
           <Fade duration={1000} delay={500}>
-            <HeroH1>Unreal Destinations</HeroH1>
-            <HeroP>Out of this world</HeroP>
+            <HeroH1>Unique Travel Destinations</HeroH1>
+            <HeroP>Be a traveler, not a tourist</HeroP>
           </Fade>
           <Fade duration={1000} delay={1000}>
             <Button primary="true" big="true" round="true" to="/true">
@@ -112,6 +112,6 @@ const HeroH1 = styled.h1`
 
 const HeroP = styled.p`
   font-size: clamp(1rem, 3vw, 3rem);
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
   font-weight: 400;
 `

@@ -11,7 +11,7 @@ const Email = () => {
         <EmailContent>
           <h1>Email</h1>
           <p>
-            Sign up for your newsletter below to get $100 off your first trip!
+            Sign up for your newsletter below to get the best deals!
           </p>
           <from action="#">
             <FormWrap>
