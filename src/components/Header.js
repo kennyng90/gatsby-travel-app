@@ -6,7 +6,7 @@ import { FaBars } from "react-icons/fa"
 import { AiOutlineClose } from "react-icons/ai"
 import { menuData } from "../data/MenuData"
 import { Button } from "./Button"
-import { animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll"
 
 const Header = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false)
@@ -16,14 +16,13 @@ const Header = ({ toggle }) => {
   const handleClick = () => setClick(!click)
 
   const toggleHome = () => {
-    scroll.scrollToTop();
-  };
+    scroll.scrollToTop()
+  }
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
       setScrollNav(true)
-    }
-    else {
+    } else {
       setScrollNav(false)
     }
   }
@@ -35,9 +34,9 @@ const Header = ({ toggle }) => {
   return (
     <Nav scrollNav={scrollNav}>
       <NavLogo to="/" scrollNav={scrollNav} onClick={toggleHome}>
-      TRAVELY
+        TRAVELY
       </NavLogo>
-      <BurgerIcon onClick={handleClick} scrollNav={scrollNav}>
+      <BurgerIcon onClick={toggle} scrollNav={scrollNav}>
         {click ? (
           <AiOutlineClose onClick={toggle} />
         ) : (
@@ -70,7 +69,6 @@ const Nav = styled.nav`
   padding: 0.5rem calc((100vw - 1300px) / 2);
   z-index: 999;
   position: sticky;
-  transition: 0.5s ease-in-out;
   top: 0;
 `
 
@@ -96,7 +94,7 @@ const NavLink = styled(Link)`
   cursor: pointer;
 
   &:hover {
-    color:  ${({ scrollNav }) => (scrollNav ? "#f26a2e" : "#dcdcdc")};
+    color: ${({ scrollNav }) => (scrollNav ? "#f26a2e" : "#dcdcdc")};
     transition: 0.3s ease-out;
   }
 `
