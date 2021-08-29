@@ -6,7 +6,7 @@ Travely is a simple and responsive landing page built with GatsbyJS, GraphQL and
 
 ## Demo
 
-[The Todo App - Live DEMO](https://ken9-todoapp.netlify.app/)
+[travelyweb.netlify.app](https://travelyweb.netlify.app/)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/dabde41a-2450-422e-89f4-2db1b6e629b6/deploy-status)](https://app.netlify.com/sites/travelyweb/deploys)
 
