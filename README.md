@@ -2,7 +2,7 @@
 
 Travely is a simple and responsive landing page built with GatsbyJS, GraphQL and Styled Components.
 
-![screenshot](https://github.com/kennyng90/gatsby-travel-app/blob/master/uploads/screenshot.png)
+![screenshot](https://github.com/kennyng90/gatsby-travel-app/blob/main/uploads/screenshot.png)
 
 ## Demo
 
